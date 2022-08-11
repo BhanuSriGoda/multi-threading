@@ -1,0 +1,22 @@
+Behaviour of Executor Framework:
+	
+1.Executors is a utility class that provides useful methods to work with ExecutorService, 
+   ScheduledExecutorService, ThreadFactory, and Callable classes through various factory methods.
+
+2.A server that creates a new thread for every request would spend more time and consume more system 
+resources in creating and destroying threads than processing actual requests.so thread pools and executors comes into picture.
+
+3.4.A framework having bunch of components used for managing worker threads effieciently is refferes as Executor framework.
+
+4.Most of the executor implementations in java.util.concurrent use thread pools, which consist of worker threads.
+This kind of thread exists separately from the Runnable and Callable tasks it executes and is often used to execute multiple tasks.
+
+
+5.Executor service manage thread in asynchronous way. Use Future callable to get the return result after thread completion. 
+Manage allocation of work to free thread and resale completed work from thread for assigning new work automatically.
+
+.6 simple way to create an executor that uses a fixed thread pool is to invoke the newFixedThreadPool factory method in 
+java.util.concurrent.Executors This class also provides the following factory methods:
+
+7.The newCachedThreadPool method creates an executor with an expandable thread pool. This executor is suitable for applications that launch many short-lived tasks.
+The newSingleThreadExecutor method creates an executor that executes a single task at a time.
